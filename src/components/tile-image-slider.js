@@ -69,6 +69,7 @@ class TileImageSlider extends React.Component {
       <>
         <BackgroundSlideshow
           images={this.state.images}
+          animationDelay={3500}
         />
         <div className="overlay cover-title">
           Coming Soon!
