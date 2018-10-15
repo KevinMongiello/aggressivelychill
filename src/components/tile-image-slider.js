@@ -26,7 +26,7 @@ class TileImageSlider extends React.Component {
       isMobile = width < 667;
     }
 
-    const mobileImages = [ portrait1, portrait2, portrait3, portrait4, portrait5, portrait6 ];
+    const mobileImages = [ portrait1, portrait2, portrait3, portrait4, portrait5, portrait6, portrait7 ];
     const desktopImages = [ image1, image2, image3, image4, image5, image6 ];
     const images = (isMobile)
       ? mobileImages
