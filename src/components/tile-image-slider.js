@@ -66,15 +66,15 @@ class TileImageSlider extends React.Component {
 
   render() {
     return (
-      <>
-        <BackgroundSlideshow
-          images={this.state.images}
-          animationDelay={3500}
-        />
-        <div className="overlay cover-title">
-          Coming Soon!
-        </div>
-      </>
+      <div>
+        {typeof window !== "undefined" &&
+          <BackgroundSlideshow
+            images={this.state.images}
+            animationDelay={3500}
+            startAt={1}
+          />
+        }
+      </div>
     );
   }
 }
